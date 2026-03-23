@@ -7,8 +7,49 @@
     <title>Demo Colisión 2D</title>
 </head>
 <body>
-    
-    <canvas id="canvas"></canvas>
+
+    <header>
+        <h1>Demo Colisión 2D</h1>
+        <p class="subtitle">Simulación de círculos con canvas y JavaScript</p>
+    </header>
+
+    <main>
+
+        <section class="demo-block">
+            <div class="demo-label">
+                <span class="tag">A</span>
+                <h2>Círculos rebotando en bordes</h2>
+            </div>
+            <div class="canvas-wrapper">
+                <canvas id="canvasA"></canvas>
+            </div>
+        </section>
+
+        <section class="demo-block">
+            <div class="demo-label">
+                <span class="tag">B</span>
+                <h2>Círculos azules que se vuelven rojos al colisionar</h2>
+            </div>
+            <div class="canvas-wrapper">
+                <canvas id="canvasB"></canvas>
+            </div>
+        </section>
+
+        <section class="demo-block">
+            <div class="demo-label">
+                <span class="tag">C</span>
+                <h2>Círculos que rebotan entre ellos animadamente</h2>
+            </div>
+            <div class="canvas-wrapper">
+                <canvas id="canvasC"></canvas>
+            </div>
+        </section>
+
+    </main>
+
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main_colision.js"></script>
+    <script src="./assets/js/main_rebote.js"></script>
+
 </body>
 </html>
