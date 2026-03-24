@@ -92,7 +92,7 @@
 
     // 🔵 CREAR CÍRCULOS SIN ENCIMARSE
     let circles = [];
-    let N = 12;
+    let N = 6;
 
     for (let i = 0; i < N; i++) {
         let intentos = 0;

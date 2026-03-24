@@ -68,7 +68,7 @@
 
     // 🔵 CREAR N CÍRCULOS
     let circles = [];
-    let N = 12;
+    let N = 5;
 
     for (let i = 0; i < N; i++) {
         let radius = Math.random() * 30 + 20;
