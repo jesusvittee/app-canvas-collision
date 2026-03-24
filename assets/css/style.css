@@ -7,7 +7,6 @@
     --accent: #c8ff00;
     --text: #f0f0f0;
     --muted: #666;
-    --tag-size: 2.2rem;
 }
 
 * {
@@ -21,80 +20,82 @@ body {
     color: var(--text);
     font-family: 'Outfit', sans-serif;
     min-height: 100vh;
-    padding: 40px 32px 80px;
+    padding: 32px;
 }
 
-/* ── Header ── */
 header {
     border-left: 3px solid var(--accent);
     padding-left: 18px;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: -0.02em;
-    line-height: 1.1;
 }
 
 header .subtitle {
     margin-top: 6px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--muted);
     font-family: 'JetBrains Mono', monospace;
 }
 
-/* ── Sections ── */
+/* ── Layout horizontal ── */
 main {
     display: flex;
-    flex-direction: column;
-    gap: 56px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    overflow-x: auto;
 }
 
 .demo-block {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
 }
 
-/* ── Label row ── */
+/* ── Label ── */
 .demo-label {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
 }
 
 .tag {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: var(--tag-size);
-    height: var(--tag-size);
+    width: 2rem;
+    height: 2rem;
     background: var(--accent);
     color: #000;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.9rem;
     flex-shrink: 0;
 }
 
 .demo-label h2 {
-    font-size: 1rem;
+    font-size: 0.78rem;
     font-weight: 400;
     color: var(--muted);
     font-family: 'JetBrains Mono', monospace;
-    letter-spacing: 0.01em;
 }
 
-/* ── Canvas wrapper ── */
+/* ── Canvas ── */
 .canvas-wrapper {
     border: 1px solid var(--border);
-    display: inline-block;
     line-height: 0;
-    background: var(--surface);
+    width: 100%;
 }
 
 .canvas-wrapper canvas {
     display: block;
+    width: 100% !important;
+    height: auto !important;
 }
